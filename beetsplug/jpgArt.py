@@ -11,6 +11,7 @@ log = logging.getLogger('beets')
 
 def pil_convert(path_in):
     """Conversion using PIL"""
+
     from PIL import Image
     try:
         imageIn = Image.open(util.syspath(path_in))
